@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
-  var theme_name = 'STARTER';
+  var theme_name = 'sils_foundation';
 
   var global_vars = {
     theme_name: theme_name,
     theme_css: 'css',
-    theme_scss: 'scss'
+    theme_scss: 'scss',
   }
 
   grunt.initConfig({
