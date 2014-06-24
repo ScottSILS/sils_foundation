@@ -79,9 +79,11 @@
 }
 
 .itemCoverArt {
+    @include grid-column(8);
     @include grid-columns(4,2,2);
 }
 
 .itemSummary {
+    @include grid-column(8);
     @include grid-columns(8,10,10);
 }
