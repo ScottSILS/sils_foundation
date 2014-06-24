@@ -1,5 +1,26 @@
 // @file
 // Place your mixins here. Feel free to roll your own mixins.
-.searchResultRow {
+.itemResultRow {
     @include grid-row();
+    .itemCoverArt { @include grid-column(4); }
+    .itemSummary { @include grid-column(8); }
 }
+
+@media #{$medium-up} {
+    .itemResultRow {
+        @include grid-row();
+        .itemCoverArt { @include grid-column(2);}
+        .itemSummary { @include grid-column(10);}
+    }
+}
+
+@media #{$large-up} {
+    .itemResultRow {
+        @include grid-row();
+        .itemCoverArt { @include grid-column(2);}
+        .itemSummary { @include grid-column(10);}
+    }
+}
+
+
+
