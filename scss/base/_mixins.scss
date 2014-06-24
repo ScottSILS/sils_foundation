@@ -1,11 +1,6 @@
 // @file
 // Place your mixins here. Feel free to roll your own mixins.
 
-//
-// Grid Columns
-//
-// A mixin to help make Foundation's grid-column mixin easier 
-// to use when specifying multiple media quries/screen sizes
 
 @mixin grid-columns(
         $small-up-screens: false,
@@ -18,12 +13,11 @@
       $large-only-screens: false,
      $xlarge-only-screens: false,
     $xxlarge-only-screens: false ){
-  
 
   @if $small-up-screens {
     @include grid-column($small-up-screens);
   }
-  
+
   @if $medium-up-screens {
     @media #{$medium-up} {
       @include grid-column($medium-up-screens);
@@ -35,7 +29,7 @@
       @include grid-column($large-up-screens);
     }
   }
-  
+
   @if $xlarge-up-screens {
     @media #{$large-up} {
       @include grid-column($xlarge-up-screens);
@@ -47,14 +41,14 @@
       @include grid-column($xxlarge-up-screens);
     }
   }
-  
+
 
   @if $small-only-screens {
     @media #{$small-only} {
       @include grid-column($small-only-screens);
     }
   }
-  
+
   @if $medium-only-screens {
     @media #{$medium-up} {
       @include grid-column($medium-only-screens);
@@ -91,7 +85,3 @@
 .itemSummary {
     @include grid-columns(8,10,10);
 }
-
-
-
-
