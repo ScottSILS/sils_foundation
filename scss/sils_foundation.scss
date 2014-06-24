@@ -44,15 +44,18 @@
 
 // Import our mixins early so they can be used by other partials.
 // Optional.
-//@import "base/mixins";
+@import "base/mixins";
 
 // Common file is where you place common utility classes to extend or
 // parametrics.
 // Optional.
-// @import "base/common";
+//@import "base/common";
 
 // Fix for some Drupal CSS quirks (Drupalisms).
 @import "base/drupal";
+
+// SILS Related testing
+@import "base/sils";
 
 // Styling for elements.
 // Optional.
