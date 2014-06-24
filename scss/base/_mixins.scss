@@ -74,9 +74,6 @@
   }
 }
 
-.itemResultRow {
-    @include grid-row();
-}
 
 .itemCoverArt {
     @include grid-column(8);
