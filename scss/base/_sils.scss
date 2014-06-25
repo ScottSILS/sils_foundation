@@ -9,6 +9,4 @@
 
 .itemSummary {
     @include grid-columns(8,10,10);
-    background: #000;
-    padding-bottom: 200px;
 }
