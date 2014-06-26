@@ -33,6 +33,8 @@ jQuery('#bloodhound .typeahead').typeahead({
    source: libraries.ttAdapter()
 });
 
+jQuery('.ui-autocomplete').addClass('f-dropdown');
+
 
 console.log(libSearchArray);
 
