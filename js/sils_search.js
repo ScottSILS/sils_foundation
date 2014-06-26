@@ -22,7 +22,7 @@ var libraries = new Bloodhound({
 
 libraries.initialize();
 
-$('#bloodhound .typeahead').typeahead({
+jQuery('#bloodhound .typeahead').typeahead({
     hint: true,
     highlight: true,
     minLength: 1
