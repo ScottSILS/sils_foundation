@@ -72,7 +72,7 @@ scripts[] = js/foundation.min.js
 ; scripts[] = js/scripts.js
 
 ;Typeahead jQuery Plugin
-scripts[] = js/typeahead.jquery.js
+scripts[] = js/typeahead.bundle.min.js
 
 ;sils search js
 scripts[] = js/sils_search.js

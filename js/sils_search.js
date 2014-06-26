@@ -14,6 +14,25 @@ jQuery(".LocationLibrary").each( function(index, element){
     libSearchArray.push( jQuery( this ).text() );
 });
 
+var libraries = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        local: $.map(libraries, function(library) { return { value: library }; })
+});
+})
+
+libraries.initialize();
+
+$('#bloodhound .typeahead').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+},
+{
+ name: 'states',
+   displayKey: 'value',
+   source: states.ttAdapter()
+});
 
 //figuring out what we're working with
 console.log(typeof(libSearchArray));
