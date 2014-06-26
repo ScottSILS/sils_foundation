@@ -5,7 +5,7 @@ if (typeof jQuery == 'undefined') {
     console.log("jQuery is loaded successfully!");
     }
 
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
 
 var libSearchArray = [];
 
