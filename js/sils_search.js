@@ -9,8 +9,8 @@ $( document ).ready(function() {
 
 var libSearchArray = [];
 
-$(".libLocation").each( function(index, element){
-    libSearchArray.push( $( this ).text() );
+jQuery(".libLocation").each( function(index, element){
+    libSearchArray.push( jQuery( this ).text() );
 });
 
 console.log(libSearchArray);
