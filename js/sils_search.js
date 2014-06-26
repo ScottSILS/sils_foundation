@@ -19,7 +19,6 @@ var libraries = new Bloodhound({
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         local: $.map(libraries, function(library) { return { value: library }; })
 });
-})
 
 libraries.initialize();
 
@@ -29,20 +28,11 @@ $('#bloodhound .typeahead').typeahead({
     minLength: 1
 },
 {
- name: 'states',
+   name: 'libraries',
    displayKey: 'value',
-   source: states.ttAdapter()
+   source: libraries.ttAdapter()
 });
 
-//figuring out what we're working with
-console.log(typeof(libSearchArray));
-
-if (libSearchArray instanceof jQuery) {
-    console.log("libSearchArray is a jquery object wtf");
-}
-else {
-    console.log("Is libSearchArray a regular old array?:" + (libSearchArray instanceof Array) + ".");
-}
 
 console.log(libSearchArray);
 
