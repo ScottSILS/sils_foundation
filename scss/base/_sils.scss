@@ -10,3 +10,8 @@
 .itemSummary {
     @include grid-columns(8,10,10);
 }
+
+.tt-dataset-libraries {
+    @include dropdown-container();
+    li { @include dropdown-style; }
+}
