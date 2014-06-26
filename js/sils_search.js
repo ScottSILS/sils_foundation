@@ -18,9 +18,12 @@ jQuery(".libLocation").each( function(index, element){
 //figuring out what we're working with
 console.log(typeof(libSearchArray));
 
-if (libSearchArray.jquery) {
-    console.log("libSearchArray is indeed a jquery object");
-};
+if (libSearchArray instanceof jQuery) {
+    console.log("libSearchArray is a jquery object wtf");
+}
+else {
+    console.log("Is libSearchArray a regular old array?:" + (libSearchArray instanceof Array) + ".");
+}
 
 console.log(libSearchArray);
 
