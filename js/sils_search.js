@@ -1,4 +1,4 @@
-//do we even have jquery up in here? can't use $('.whatevs')
+//do we even have jquery up in here? can't use $('.whatevs') ?!
 if (typeof jQuery == 'undefined') {
     console.log("jQuery NOT LOADED");
     } else {
@@ -10,7 +10,7 @@ jQuery( document ).ready(function() {
 
 var libSearchArray = [];
 
-jQuery(".libLocation").each( function(index, element){
+jQuery(".LocationLibrary").each( function(index, element){
     libSearchArray.push( jQuery( this ).text() );
 });
 
