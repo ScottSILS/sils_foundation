@@ -26,7 +26,11 @@ libraries.initialize();
 jQuery('#bloodhound .typeahead').typeahead({
     hint: true,
     highlight: true,
-    minLength: 1
+    minLength: 1,
+    updater: function (item) {
+        //navigate to selected item
+        window.location.href = item;
+    }
 },
 {
    name: 'libraries',
