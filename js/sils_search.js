@@ -8,16 +8,18 @@ if (typeof jQuery == 'undefined') {
 //but apparently calling jQuery(); works just dandy
 jQuery( document ).ready(function() {
 
-var libSearchArray = [];
+var libLocationSearchObj = new Object();
 
 jQuery(".LocationLibrary").each( function(index, element){
-    libSearchArray.push( jQuery( this ).text() );
+    libLocationSearchObj["name"] = jQuery(this).text();
+    libLocationSearchObj["url"] = jQuery(this).find("a:first").attr('href');
 });
 
+/*
 var libraries = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        local: jQuery.map(libSearchArray, function(library) { return { value: library }; })
+        local: jQuery.map(libLocationSearchObj, function(libraryName, index) { return { value: libraryName }; })
 });
 
 libraries.initialize();
@@ -32,9 +34,9 @@ jQuery('#bloodhound .typeahead').typeahead({
    displayKey: 'value',
    source: libraries.ttAdapter()
 });
+*/
 
 
-
-console.log(libSearchArray);
+console.log(libLocationSearchObj);
 
 });
