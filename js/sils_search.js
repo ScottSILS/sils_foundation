@@ -36,7 +36,10 @@ jQuery('#bloodhound .typeahead').typeahead({
 {
    name: 'libraries',
    displayKey: 'value',
-   source: libraries.ttAdapter()
+   source: libraries.ttAdapter(),
+   templates: {
+       header: 'Choose your location<hr>'
+   }
 });
 
 
