@@ -11,7 +11,7 @@
     @include grid-columns(8,10,10);
 }
 
-.tt-dataset-libraries {
+.tt-dropdown-menu {
     @include dropdown-container();
     li { @include dropdown-style; }
 }
