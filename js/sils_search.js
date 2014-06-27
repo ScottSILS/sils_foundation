@@ -35,12 +35,7 @@ jQuery('#bloodhound .typeahead').typeahead({
    source: libraries.ttAdapter(),
    templates: {
        header: '<p>Choose your location</p><hr>',
-       suggestion: Handlebars.compile('
-
-        {{#each libLocationSearchObj}}
-            Key: {{@key}} Value = {{this}}
-        {{/each}}
-        <p><a href="{{@key}}">{{value}}</a></p>')
+       suggestion: Handlebars.compile('<p><a href="{{key}}">{{value}}</a></p>');
    }
 });
 
