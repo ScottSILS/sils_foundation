@@ -19,7 +19,7 @@ jQuery(".LocationLibrary").each( function(index, element){
 var libraries = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        local: jQuery.map(libLocationSearchObj, function(value, key) { return { value: key }; })
+        local: jQuery.map(libLocationSearchObj, function(value, key) { return { value: key, key: value }; })
 });
 
 libraries.initialize();
@@ -35,7 +35,7 @@ jQuery('#bloodhound .typeahead').typeahead({
    source: libraries.ttAdapter(),
    templates: {
        header: '<p>Choose your location</p><hr>',
-       suggestion: Handlebars.compile('<p><a href="{{@key}}">{{value}}</a></p>')
+       suggestion: Handlebars.compile('<p><a href="{{key}}">{{value}}</a></p>')
    }
 });
 
