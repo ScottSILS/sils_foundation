@@ -19,7 +19,7 @@ jQuery(".LocationLibrary").each( function(index, element){
 var libraries = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        local: jQuery.map(libLocationSearchObj, function(value, key) { return { value: key, key: value }; })
+        local: jQuery.map(libLocationSearchObj, function(libURL, libName) { return { value: libName, key: libURL }; })
 });
 
 libraries.initialize();
