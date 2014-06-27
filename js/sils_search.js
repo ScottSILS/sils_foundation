@@ -11,8 +11,8 @@ jQuery( document ).ready(function() {
 var libLocationSearchObj = new Object();
 
 jQuery(".LocationLibrary").each( function(index, element){
-    libLocationSearchObj["name"] = jQuery(this).text();
-    libLocationSearchObj["url"] = jQuery(this).find("a:first").attr('href');
+    var libName = jQuery(this).text();
+    libLocationSearchObj[libName] = jQuery(this).find("a:first").attr('href');
 });
 
 /*
