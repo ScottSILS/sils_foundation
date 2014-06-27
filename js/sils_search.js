@@ -26,6 +26,7 @@ jQuery('#bloodhound .typeahead').typeahead({
     hint: true,
     highlight: true,
     minLength: 1
+    menu: '#itemSummary'
 },
 {
    name: 'libraries',
@@ -33,7 +34,6 @@ jQuery('#bloodhound .typeahead').typeahead({
    source: libraries.ttAdapter()
 });
 
-jQuery('.ui-autocomplete').addClass('f-dropdown');
 
 
 console.log(libSearchArray);
