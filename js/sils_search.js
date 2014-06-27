@@ -34,7 +34,7 @@ jQuery('#bloodhound .typeahead').typeahead({
    source: libraries.ttAdapter(),
    templates: {
        header: 'Choose your location<hr>',
-       suggestion: Handlebars.compile('<p>{{value}}</p')
+       suggestion: Handlebars.compile('<p><a href="google.ca">WTF:{{value}}</a></p>')
    }
 });
 
