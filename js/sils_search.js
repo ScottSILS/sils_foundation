@@ -12,7 +12,8 @@ var libLocationSearchObj = new Object();
 
 jQuery(".LocationLibrary").each( function(index, element){
     var libName = jQuery(this).text();
-    libLocationSearchObj[libName] = jQuery(this).find("a:first").attr('href');
+    var libURL = jQuery(this).find("a:first").attr('href');
+    libLocationSearchObj[libName] = libURL;
 });
 
 var libraries = new Bloodhound({
@@ -33,8 +34,13 @@ jQuery('#bloodhound .typeahead').typeahead({
    displayKey: 'value',
    source: libraries.ttAdapter(),
    templates: {
-       header: 'Choose your location<hr>',
-       suggestion: Handlebars.compile('<p><a href="{{key}}">{{value}}</a></p>')
+       header: '<p>Choose your location</p><hr>',
+       suggestion: Handlebars.compile('
+
+        {{#each libLocationSearchObj}}
+            Key: {{@key}} Value = {{this}}
+        {{/each}}
+        <p><a href="{{@key}}">{{value}}</a></p>')
    }
 });
 
