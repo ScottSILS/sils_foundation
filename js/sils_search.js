@@ -15,11 +15,10 @@ jQuery(".LocationLibrary").each( function(index, element){
     libLocationSearchObj[libName] = jQuery(this).find("a:first").attr('href');
 });
 
-/*
 var libraries = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        local: jQuery.map(libLocationSearchObj, function(libraryName, index) { return { value: libraryName }; })
+        local: jQuery.map(libLocationSearchObj, function(value, key) { return { value: key }; })
 });
 
 libraries.initialize();
@@ -34,7 +33,6 @@ jQuery('#bloodhound .typeahead').typeahead({
    displayKey: 'value',
    source: libraries.ttAdapter()
 });
-*/
 
 
 console.log(libLocationSearchObj);
