@@ -71,8 +71,9 @@ scripts[] = js/foundation.min.js
 ; This file is empty, just uncomment this line and start editing!
 ; scripts[] = js/scripts.js
 
-;Typeahead jQuery Plugin
+;Typeahead jQuery Plugin & Handlebars Templating
 scripts[] = js/typeahead.bundle.min.js
+scripts[] = js/bower_components/handlebars/handlebars.min.js
 
 ;sils search js
 scripts[] = js/sils_search.js
