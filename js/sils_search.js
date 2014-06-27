@@ -39,6 +39,7 @@ jQuery('#bloodhound .typeahead').typeahead({
    source: libraries.ttAdapter(),
    templates: {
        header: 'Choose your location<hr>'
+       suggestion: '-'+value+'-'
    }
 });
 
