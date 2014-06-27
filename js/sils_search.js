@@ -8,16 +8,16 @@ if (typeof jQuery == 'undefined') {
 //but apparently calling jQuery(); works just dandy
 jQuery( document ).ready(function() {
 
-var libSearchArray = [];
+var libSearchObj = new Object();
 
 jQuery(".LocationLibrary").each( function(index, element){
-    libSearchArray.push( jQuery( this ).text() );
+    libSearchObj["locationName"] = ( jQuery( this ).text() );
 });
 
 var libraries = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        local: jQuery.map(libSearchArray, function(library) { return { value: library }; })
+        local: jQuery.map(libSearchObj["locationName"], function(library) { return { value: library }; })
 });
 
 libraries.initialize();
