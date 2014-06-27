@@ -30,6 +30,7 @@ jQuery('#bloodhound .typeahead').typeahead({
     updater: function (item) {
         //navigate to selected item
         window.location.href = item;
+        console.log("what the fack")
     }
 },
 {
