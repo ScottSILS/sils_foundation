@@ -27,19 +27,14 @@ jQuery('#bloodhound .typeahead').typeahead({
     hint: true,
     highlight: true,
     minLength: 1,
-    updater: function (item) {
-        //navigate to selected item
-        window.location.href = item;
-        console.log("what the fack")
-    }
-},
+    },
 {
    name: 'libraries',
    displayKey: 'value',
    source: libraries.ttAdapter(),
    templates: {
        header: 'Choose your location<hr>',
-       suggestion: '-'+value+'-'
+       suggestion: '-'+'-'
    }
 });
 
