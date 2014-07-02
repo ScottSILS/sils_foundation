@@ -18,8 +18,9 @@
     li { @include dropdown-style; }
 }
 
-._record_link > h5 {
+._record_link > h4 {
     color: $primary-color;
+    text-decoration: underline;
 }
 
 
