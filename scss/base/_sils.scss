@@ -11,9 +11,6 @@
 
 .itemSummary {
     @include grid-columns(8,10,10);
-    h5 {
-        color: $primary-color;
-    }
 
 }
 
@@ -22,6 +19,11 @@
     li { @include dropdown-style; }
 }
 
+a {
+    ._record_link {
+    color: $primary-color;
+   }
+}
 
 .tt-query,
 .tt-hint {
