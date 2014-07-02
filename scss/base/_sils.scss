@@ -1,3 +1,5 @@
+@import '../vendor/foundation/_settings.scss';
+
 //Classes used by SILS Theme
 .searchResultRow {
     @include grid-row();
@@ -9,6 +11,10 @@
 
 .itemSummary {
     @include grid-columns(8,10,10);
+    h5 {
+        color: $primary-color;
+    }
+
 }
 
 .tt-dropdown-menu {
