@@ -18,16 +18,10 @@
     li { @include dropdown-style; }
 }
 
-a {
-    ._record_link {
+._record_link > h5 {
     color: $primary-color;
-
-    h5 {
-         color: $primary-color;
-
-    }
-   }
 }
+
 
 .tt-query,
 .tt-hint {
