@@ -1,6 +1,6 @@
 @import '../vendor/foundation/_settings.scss';
 
-//Classes used by SILS Theme
+//Classes used by SILS Search Results
 .searchResultRow {
     @include grid-row();
 }
@@ -9,25 +9,26 @@
     @include grid-columns(4,2,2);
 }
 
+._record_link > h4 {
+    color: $primary-color;
+}
+
 .itemSummary {
     @include grid-columns(8,10,10);
 }
 
-.tt-dropdown-menu {
-    @include dropdown-container();
-    li { @include dropdown-style; }
-}
-
-._record_link > h4 {
-    color: $primary-color;
-    text-decoration: underline;
-    @extend a;
+.hold_button {
+    @include button;
 }
 
 .sort_links {
     @include inline-list;
 }
 
+
+
+
+//Styles for Bloodhound  Location Search Twitter-Typeahead
 .tt-query,
 .tt-hint {
     width: 396px;
@@ -58,6 +59,13 @@
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
+
+//.tt-dropdown-menu {
+ //   @include dropdown-container();
+  //  li { @include dropdown-style; }
+//}
+
+
 
 .tt-suggestion {
     padding: 3px 20px;
