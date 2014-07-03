@@ -21,8 +21,12 @@
 ._record_link > h4 {
     color: $primary-color;
     text-decoration: underline;
+    @extend a;
 }
 
+.sort_links {
+    @include inline-list;
+}
 
 .tt-query,
 .tt-hint {
