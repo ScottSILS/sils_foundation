@@ -17,7 +17,7 @@
     @include grid-columns(8,10,10);
 }
 
-a .holdButton {
+.holdButton {
     @include button;
 }
 
