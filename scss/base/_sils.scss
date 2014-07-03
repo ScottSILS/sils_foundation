@@ -1,7 +1,18 @@
 @import '../vendor/foundation/_settings.scss';
 @import '../vendor/foundation/components/_buttons.scss';
+@import '../vendor/foundation/components/_labels.scss';
 
+//hide drupal breadcrumbs
+.breadcrumbs {
+    display: none;
+}
+
+//
 //Classes used by SILS Search Results
+//
+
+
+//container for each rendered search result
 .searchResultRow {
     @include grid-row();
 }
@@ -14,6 +25,10 @@
     color: $primary-color;
 }
 
+.formatIcon {
+    @include label;
+}
+
 .itemSummary {
     @include grid-columns(8,10,10);
 }
@@ -24,6 +39,11 @@
 
 .sort_links {
     @include inline-list;
+}
+
+.resultauthor {
+    padding-bottom: -30px;
+    margin-bottom: -30px;
 }
 
 
