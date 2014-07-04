@@ -71,11 +71,11 @@
 //Styles for Bloodhound  Location Search Twitter-Typeahead
 .tt-query,
 .tt-hint {
-    width: 396px;
+    /*width: 396px;
     height: 30px;
     padding: 8px 12px;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 30px;*/
     border: 2px solid #ccc;
     border-radius: 8px;
     outline: none;
@@ -115,7 +115,7 @@
 
 .tt-suggestion.tt-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
     color: #fff;
-    background-color: #0097cf;
+    background-color: $secondary-color;
 
 }
 
