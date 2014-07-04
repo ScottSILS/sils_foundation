@@ -12,6 +12,9 @@
 //Classes used by SILS Search Results
 //
 
+.totalMatches {
+    @include grid-columns(12,12,12);
+}
 
 //container for and elements of  each rendered search result
 .searchResultRow {
@@ -79,6 +82,10 @@
     border: 2px solid #ccc;
     border-radius: 8px;
     outline: none;
+}
+
+.tt-input {
+    width: 100%;
 }
 
 .tt-query {
