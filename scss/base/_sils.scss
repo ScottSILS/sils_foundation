@@ -58,6 +58,7 @@
     @include button;
     margin-bottom: 1em;
     margin-top: 1em;
+    line-height: 0.5 !important;
 }
 
 .sort_links {
@@ -77,6 +78,7 @@
 
 .placeHolderIcon {
     font-size: 4rem;
+    text-align: center;
 }
 
 
