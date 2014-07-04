@@ -41,11 +41,14 @@
     @include button;
 }
 
+
+
 .searchButton {
     @include prefix-postfix-base();
     @include postfix();
     @include button;
-    margin-bottom: 0px;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .sort_links {
