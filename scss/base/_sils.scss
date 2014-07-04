@@ -34,6 +34,12 @@
     @include label;
 }
 
+//for <p> tag used to put hold button on new line when no
+//summary is rendered
+.itemDataSpacer {
+    padding-top: 20px;
+}
+
 .itemSummary {
     @include grid-columns(8,10,10);
 }
