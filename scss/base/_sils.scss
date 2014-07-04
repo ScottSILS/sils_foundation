@@ -23,7 +23,6 @@
 
 .itemCoverArt {
     @include grid-columns(4,2,2);
-    padding-right: 200px;
 }
 
 ._record_link > h4 {
