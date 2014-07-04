@@ -34,7 +34,7 @@ jQuery('#bloodhound .typeahead').typeahead({
    displayKey: 'value',
    source: libraries.ttAdapter(),
    templates: {
-       header: '<p>Choose your location</p><hr>',
+       //header: '<p>Choose your location</p><hr>',
        suggestion: Handlebars.compile('<p><a href="{{key}}">{{value}}</a></p>')
    }
 });
