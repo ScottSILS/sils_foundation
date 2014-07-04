@@ -45,6 +45,7 @@
     @include prefix-postfix-base();
     @include postfix();
     @include button;
+    margin-bottom: 0px;
 }
 
 .sort_links {
