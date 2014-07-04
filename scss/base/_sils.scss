@@ -1,5 +1,6 @@
 @import '../vendor/foundation/_settings.scss';
 @import '../vendor/foundation/components/_buttons.scss';
+@import '../vendor/foundation/components/_forms.scss';
 @import '../vendor/foundation/components/_labels.scss';
 
 //hide drupal breadcrumbs
@@ -12,7 +13,7 @@
 //
 
 
-//container for each rendered search result
+//container for and elements of  each rendered search result
 .searchResultRow {
     @include grid-row();
 }
@@ -34,7 +35,15 @@
     @include grid-columns(8,10,10);
 }
 
+
+//Buttons
 .holdButton {
+    @include button;
+}
+
+.searchButton {
+    @include prefix-postfix-base();
+    @include postfix();
     @include button;
 }
 
@@ -100,7 +109,7 @@
     line-height: 24px;
 }
 
-.tt-suggestion.tt-is-under-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+.tt-suggestion.tt-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
     color: #fff;
     background-color: #0097cf;
 
