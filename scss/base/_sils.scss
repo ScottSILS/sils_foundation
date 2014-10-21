@@ -25,6 +25,10 @@
     @include grid-columns(4,2,2);
 }
 
+.itemCoverArtDetail {
+    @include grid-columns(4,4,4);
+}
+
 ._record_link > h4 {
     color: $primary-color;
     margin-bottom: -1px;
@@ -42,6 +46,10 @@
 
 .itemSummary {
     @include grid-columns(8,10,10);
+}
+
+.itemSummaryDetail {
+    @include grid-columns(8,8,8);
 }
 
 
