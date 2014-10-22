@@ -3,6 +3,7 @@
 @import '../vendor/foundation/components/_forms.scss';
 @import '../vendor/foundation/components/_labels.scss';
 @import '../vendor/foundation/components/_tabs.scss';
+//@import '../vendor/foundation/components/tabs';
 
 //hide drupal breadcrumbs
 .breadcrumbs {
@@ -89,6 +90,11 @@
 .placeHolderIcon {
     font-size: 4rem;
     margin: 0 auto;
+    margin-left: 3rem;
+}
+
+.testIng {
+//    @include tab;
 }
 
 
