@@ -20,6 +20,8 @@ base theme = zurb_foundation
 ;
 
 stylesheets[all][] = foundation-icons/foundation-icons.css
+stylesheets[all][] = css/owl.carousel.css
+stylesheets[all][] = css/owl.theme.css
 
 ; The "FILE" is the name of the stylesheet to add/override/remove.
 ; The "MEDIA" in the first set of brackets is a media type or a media query.
@@ -80,6 +82,8 @@ scripts[] = js/bower_components/handlebars/handlebars.min.js
 scripts[] = js/sils_search.js
 scripts[] = js/sils_autocomplete.js
 
+;owl book scroller
+scripts[] = js/owl.carousel.min.js
 ; This section lists the regions defined in the page.tpl.php. The name in
 ; brackets is the machine name of the region. The text after the equals sign is
 ; a descriptive text used on the admin/structure/blocks page.
