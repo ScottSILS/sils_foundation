@@ -114,12 +114,18 @@
 
 .syn_title {
     font-size: 1.5rem;
+    padding: 4px;
 }
 
 //hide the terms for each blob that comes back
 .syn_terms {
     display: none;
 }
+
+.syn_copyright {
+    display: none;
+}
+
 
 //
 //Styles for Bloodhound  Location Search Twitter-Typeahead
@@ -150,7 +156,7 @@
 
 .tt-dropdown-menu {
     width: 422px;
-    margin-top: 12px;
+    margin-top: 0px;
     padding: 8px 0;
     background-color: #fff;
     border: 1px solid #ccc;
