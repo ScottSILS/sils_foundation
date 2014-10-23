@@ -61,7 +61,6 @@
 }
 
 
-
 .searchButton {
     @include prefix-postfix-base();
     @include postfix();
@@ -94,6 +93,7 @@
 }
 
 
+//styles for suggested title scroller on item detail view
 .sils_suggested_title {
     padding: 15px;
 }
@@ -108,8 +108,22 @@
     width: 170px;
 }
 
+//
+//styles for syndetics
+//
 
+.syn_title {
+    font-size: 1.5rem;
+}
+
+//hide the terms for each blob that comes back
+.syn_terms {
+    display: none;
+}
+
+//
 //Styles for Bloodhound  Location Search Twitter-Typeahead
+//
 .tt-query,
 .tt-hint {
     /*width: 396px;
