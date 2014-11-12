@@ -89,7 +89,8 @@
 .placeHolderIcon {
     font-size: 4rem;
     margin: 0 auto;
-    margin-left: 3rem;
+    position: absolute;
+    z-index: -1;
 }
 
 
