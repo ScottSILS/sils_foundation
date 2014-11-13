@@ -25,6 +25,7 @@
 
 .itemCoverArt {
     @include grid-columns(4,2,2);
+    margin: 0 auto;
 }
 
 .itemCoverArtDetail {
@@ -91,7 +92,6 @@
     font-size: 4rem;
     position: absolute;
     z-index: -1;
-    width: 16.7%;
     text-align: center;
 }
 
