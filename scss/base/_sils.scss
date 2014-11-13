@@ -48,6 +48,7 @@
 
 .itemSummary {
     @include grid-columns(8,10,10);
+    float: left;
 }
 
 .itemSummaryDetail {
@@ -89,8 +90,6 @@
 .placeHolderIcon {
     font-size: 4rem;
     margin: 0 auto;
-    position: absolute;
-    z-index: -1;
 }
 
 
