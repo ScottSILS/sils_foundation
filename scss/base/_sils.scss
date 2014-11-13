@@ -54,6 +54,7 @@
 
 .itemSummaryDetail {
     @include grid-columns(8,8,8);
+    float: right !important;
 }
 
 
