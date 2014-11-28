@@ -21,8 +21,8 @@
 //container for and elements of  each rendered search result
 .searchResultRow {
     @include grid-row();
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .itemCoverArt {
