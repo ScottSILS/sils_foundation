@@ -112,7 +112,8 @@
     <!--/.l-help -->
   <?php endif; ?>
 
-  <main role="main" class="row l-main">
+<!--  <main role="main" class="row l-main"> -->
+	<main role="main">
     <div class="<?php print $main_grid; ?> main columns">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
@@ -203,7 +204,7 @@
   <?php endif; ?>
 
   <!--.l-footer-->
-  <footer class="l-footer panel row" role="contentinfo">
+  <footer role="contentinfo">
     <?php if (!empty($page['footer'])): ?>
       <div class="footer large-12 columns">
         <?php print render($page['footer']); ?>
