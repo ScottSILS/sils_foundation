@@ -113,8 +113,8 @@
   <?php endif; ?>
 
 <!--  <main role="main" class="row l-main"> -->
-	<main role="main">
-    <div class="<?php print $main_grid; ?> main columns">
+	<main role="main row">
+   <div class="<?php print $main_grid; ?> main columns">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
           <?php print render($page['highlighted']); ?>
@@ -127,7 +127,7 @@
 
       <?php if ($title && !$is_front): ?>
         <?php print render($title_prefix); ?>
-        <h1 id="page-title" class="title"><?php print $title; ?></h1>
+        <div class="large-12 columns"><h1 id="page-title" class="title" style="text-align: center"><?php print $title; ?></h1></div>
         <?php print render($title_suffix); ?>
       <?php endif; ?>
 
@@ -212,7 +212,7 @@
     <?php endif; ?>
 
     <?php if ($site_name) :?>
-      <div class="copyright large-12 columns">
+      <div class="copyright small-12 columns" style="text-align: center;">
         &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
       </div>
     <?php endif; ?>
