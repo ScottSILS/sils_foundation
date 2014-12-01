@@ -28,6 +28,7 @@
 .itemCoverArt {
     @include grid-columns(12,2,2);
     margin: 0 auto;
+    min-height: 4rem;
 }
 
 .itemCoverArtDetail {
@@ -99,15 +100,6 @@
     padding-left: 4%;
 }
 
-@media #{$small-only} { 
-    .placeHolderIcon {
-        font-size: 4rem;
-        z-index: -1;
-        text-align: center;
-        position: static;
-        padding-left: 0px;
-    }
-}
 
 
 //styles for suggested title scroller on item detail view
