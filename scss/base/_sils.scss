@@ -99,6 +99,14 @@
     padding-left: 4%;
 }
 
+@media #{$small-only} { 
+    .placeHolderIcon {
+        font-size: 4rem;
+        z-index: -1;
+        text-align: center;
+    }
+}
+
 
 //styles for suggested title scroller on item detail view
 .sils_suggested_title {
