@@ -31,6 +31,16 @@
     min-height: 4rem;
 }
 
+@media #{$small-only} {
+    .itemCoverArt {
+        @include grid-column($center: true);
+        text-align: center;
+}
+
+
+
+}
+
 .itemCoverArtDetail {
     @include grid-columns(4,4,4);
 }
