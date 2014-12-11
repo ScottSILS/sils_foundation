@@ -17,7 +17,7 @@
 
 .subsubnav {
     @include sub-nav(
-    $active-bg: $secondary-color
+    $active-bg: $secondary-color !important
     );
 }
 
