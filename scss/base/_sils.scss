@@ -55,6 +55,10 @@
     min-height: 4rem;
 }
 
+.pubdate {
+    padding: 5px;
+}
+
 @media #{$small-only} {
     .itemCoverArt {
         @include grid-column($center: true);
