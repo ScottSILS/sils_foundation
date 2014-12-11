@@ -32,6 +32,7 @@
 .subsubnav_container {
     @include grid-columns(12,12,12);
     padding-top: -15px;
+    margin-top: -15px;
 }
 
 //container for and elements of  each rendered search result
