@@ -17,8 +17,12 @@
 
 .subsubnav {
     @include sub-nav(
-    $active-bg: $secondary-color !important
+    $active-bg: $info-color,
+    $font-color: $secondary-color
     );
+    border-top-width: thin;
+    margin-top: none;
+    padding-top: none;
 }
 
 .totalMatches {
