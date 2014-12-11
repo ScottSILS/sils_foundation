@@ -21,8 +21,8 @@
     $font-color: $secondary-color
     );
     border-top-width: thin;
-    margin-top: none;
-    padding-top: none;
+    border-top-style: solid;
+    border-top-color: $secondary-color;
 }
 
 .totalMatches {
