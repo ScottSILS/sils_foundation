@@ -3,6 +3,7 @@
 @import '../vendor/foundation/components/_forms.scss';
 @import '../vendor/foundation/components/_labels.scss';
 @import '../vendor/foundation/components/_tabs.scss';
+@import '../vendor/foundation/components/_sub-nav.scss';
 //@import '../vendor/foundation/components/tabs';
 
 //hide drupal breadcrumbs
@@ -13,6 +14,12 @@
 //
 //Classes used by SILS Search Results
 //
+
+.subsubnav {
+    @include sub-nav(
+    $active-bg: $secondary-color
+    );
+}
 
 .totalMatches {
     @include grid-columns(12,12,12);
@@ -35,10 +42,7 @@
     .itemCoverArt {
         @include grid-column($center: true);
         text-align: center;
-}
-
-
-
+    }
 }
 
 .itemCoverArtDetail {
