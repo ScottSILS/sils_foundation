@@ -25,6 +25,15 @@
     border-top-color: $secondary-color;
 }
 
+.select_material {
+    @include sub-nav();
+}
+
+.subnav_container {
+    @include grid-columns(12,12,12);
+    margin-bottom: -15px;
+}
+
 .totalMatches {
     @include grid-columns(12,12,12);
 }
