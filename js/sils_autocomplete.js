@@ -4,7 +4,7 @@ var searchResults = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
   queryTokenizer: Bloodhound.tokenizers.whitespace,
   remote: {
-            url: '/eds/autosuggest?iid=eds&iver=live&numterms=10&userinput=%QUERY',
+            url: '/search/eds/ajax/suggestions/%QUERY',
 	    filter: function(parsedResponse) {
             var dataset = [];
             for(i = 0; i < parsedResponse.length; i++) {
